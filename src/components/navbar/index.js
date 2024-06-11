@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import ContentWrapper from "../wrapper";
 import Button from "../button";
 
+
 const Navbar = () => {
   const [hamOpen, setHamOpen] = useState(false);
+
+
 
   const handleClick = () => {
     setHamOpen(!hamOpen);
@@ -12,7 +15,7 @@ const Navbar = () => {
 
   return (
     <ContentWrapper>
-      <div className="flex items-center justify-between py-4 sm:mb-0 mb-[100px]">
+      <div className="flex items-center justify-between py-4 sm:mb-[150px] mb-[100px]">
         <div className="flex flex-wrap gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
           <div className="child flex items-center justify-center w-auto max-w-[204px] h-auto max-h-[48px] flex-wrap gap-3">
             <svg
@@ -33,7 +36,7 @@ const Navbar = () => {
             <h2 className="font-medium text-[20px] text-[#610BEF]">Appname</h2>
           </div>
         </div>
-        <div>
+        <div className="flex items-center">
           <nav
             className={`navPoints sm:w-auto  sm:flex sm:gap-4 sm:justify-center sm:items-center w-full -webkit-fill-available mt-28 sm:mt-0 sm:pl-0 pl-[40px]  ${
               hamOpen
