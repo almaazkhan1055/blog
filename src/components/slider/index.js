@@ -50,9 +50,12 @@ const Slider = () => {
         gridTemplateColumns: "repeat(4, 335px)",
       }}
     >
-      {swiperData.map((item) => {
+      {swiperData.map((item, index) => {
         return (
-          <div className="bg-[#610BEF] rounded-2xl text-white mr-3 p-10 h-[480px]">
+          <div
+            key={index}
+            className="bg-[#610BEF] rounded-2xl text-white mr-3 p-10 h-[480px]"
+          >
             <p className="font-semibold text-[24px] text-[#FCFCFC] mb-[40px]">
               {item.heading}
             </p>

@@ -34,10 +34,11 @@ function Footer() {
               <h2 className="font-semibold text-[18px] leading-8  text-black  ">
                 Appname
               </h2>
-              {["Home", "About", "Features"].map((item) => {
+              {["Home", "About", "Features"].map((item, index) => {
                 return (
                   <div>
                     <a
+                      key={index}
                       href=""
                       className="font-normal text-[18px] leading-8  text-[#4E4B66]"
                     >
@@ -51,25 +52,29 @@ function Footer() {
               <h2 className="font-semibold text-[18px] leading-8  text-black ">
                 Support
               </h2>
-              {["FAQ", "Customer", "Zendesk", "Resources"].map((item) => {
-                return (
-                  <a
-                    href=""
-                    className="font-normal text-[18px] leading-8  text-[#4E4B66] flex flex-col"
-                  >
-                    {item}
-                  </a>
-                );
-              })}
+              {["FAQ", "Customer", "Zendesk", "Resources"].map(
+                (item, index) => {
+                  return (
+                    <a
+                      key={index}
+                      href=""
+                      className="font-normal text-[18px] leading-8  text-[#4E4B66] flex flex-col"
+                    >
+                      {item}
+                    </a>
+                  );
+                }
+              )}
             </div>
             <div className="mb-10">
               <h2 className="font-semibold text-[18px] leading-8  text-black ">
                 Developers
               </h2>
-              {["Documentation", "API", "Careers"].map((item) => {
+              {["Documentation", "API", "Careers"].map((item, index) => {
                 return (
                   <div>
                     <a
+                      key={index}
                       href=""
                       className="font-normal text-[18px] leading-8  text-[#4E4B66]"
                     >

@@ -19,7 +19,11 @@ function Corporate() {
           <p>2021</p>
         </h2>
         <div className="flex items-center gap-4">
-          <Image src={Img} className="w-[50px] h-[50px] rounded-full" />
+          <Image
+            src={Img}
+            alt={Img}
+            className="w-[50px] h-[50px] rounded-full"
+          />
           <div className="flex flex-col gap-1">
             <span className="font-medium text-[17px] ">Dallas Grimsley</span>
 
