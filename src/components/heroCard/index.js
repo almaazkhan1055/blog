@@ -1,8 +1,9 @@
 import React from "react";
-import ReadMore from "../readMorebtn";
+import CustomLink from "../CustomLink";
 import Image from "next/image";
 import Img from "../../../public/CardImages/customer1.jpg";
 import GradientDiv from "../gradient";
+import { IoIosArrowForward } from "react-icons/io";
 
 function Corporate() {
   return (
@@ -38,7 +39,11 @@ function Corporate() {
           leaders, developers, and founders. Read more about the new products
           and features we highlighted in our keynote and product talks.
         </p>
-        <ReadMore color={"#610BEF"} />
+        <CustomLink
+          color={"#610BEF"}
+          icon={<IoIosArrowForward />}
+          text={"Read more"}
+        />
       </div>
       <GradientDiv />
     </div>

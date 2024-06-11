@@ -3,7 +3,7 @@ import React from "react";
 const GradientDiv = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-purple-600 to-purple-900 flex items-center justify-center text-white rounded-3xl sm:h-[490px] sm:w-[490px]">
+      <div className="bg-gradient-to-r from-purple-600 to-purple-900 flex items-center justify-center text-white rounded-3xl py-20 sm:w-[490px]">
         <div className="flex flex-col gap-2 p-20">
           <h2 className="font-bold sm:text-7xl text-5xl sm:leading-[68px] leading-[4rem]">
             Stripe <br />

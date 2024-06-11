@@ -26,6 +26,7 @@ export const corporateData = [
     Name: "Dallas Grimsley",
     post: "User Relations",
     customerImg: customer1,
+    linkText: "Read More",
   },
   {
     head: "Product",
@@ -67,7 +68,7 @@ export const corporateData = [
     customerImg: customer4,
   },
   {
-    key: 5,
+    hasGradient: true,
     head: "Corporate",
     title: "Sessions kicks off June 16",
 
@@ -93,9 +94,10 @@ export const corporateData = [
     Name: "Jonathan Benefiel",
     post: "Payment",
     customerImg: customer6,
+    spanText: "PaymentIntents API.",
   },
   {
-    key: "no-flex",
+    isNotImage: true,
     head: "Product",
     title:
       "European payment methods available worldwide in minutes, not months",
@@ -105,11 +107,11 @@ export const corporateData = [
     ],
     date: "October 27,  2020",
     Name: "Neda Mikus",
-    post: "Payment Mtehods",
+    post: "Payment Methods",
     customerImg: customer7,
   },
   {
-    key: "no-flex",
+    isNotImage: true,
     head: "Product",
     title: "New Dashboard features to save you time",
 

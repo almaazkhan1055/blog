@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import Img from "../../../public/CardImages/customer1.jpg";
 
 const CustomerDetails = ({ cusData }) => {
   return (
