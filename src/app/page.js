@@ -15,14 +15,14 @@ const page = () => {
       <Hero />
       <ContentWrapper>
         <Menu />
-        {[...corporateData].slice(0, 3).map((data) => (
-          <Card cardData={data} />
+        {[...corporateData].slice(0, 3).map((data, i) => (
+          <Card key={i} cardData={data} />
         ))}
       </ContentWrapper>
       <Carousel />
       <ContentWrapper>
-        {[...corporateData].slice(3).map((data) => (
-          <Card cardData={data} />
+        {[...corporateData].slice(3).map((data, i) => (
+          <Card key={i} cardData={data} />
         ))}
         <Button text="View All Posts" bgcolor="#610BEF" />
       </ContentWrapper>

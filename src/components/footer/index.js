@@ -18,15 +18,18 @@ function Footer() {
           </div>
           <div className=" w-1/2 flex flex-col sm:flex-row sm:justify-between mt-50px sm:mt-0">
             {footerData.length > 0 &&
-              footerData.map((item) => {
+              footerData.map((item, i) => {
                 return (
-                  <div className="mb-10">
+                  <div key={i} className="mb-10">
                     <h2 className="font-semibold text-[18px] leading-8  text-black  mb-8">
                       {item.heading}
                     </h2>
-                    {item.links.map((link) => {
+                    {item.links.map((link, i) => {
                       return (
-                        <div className="font-normal text-[18px] leading-8  text-[#4E4B66] mb-3">
+                        <div
+                          key={i}
+                          className="font-normal text-[18px] leading-8  text-[#4E4B66] mb-3"
+                        >
                           <a href="#">{link}</a>
                         </div>
                       );
@@ -37,8 +40,8 @@ function Footer() {
           </div>
         </div>
         <div className="icons flex gap-16 mb-10">
-          {socialIcons.map((slogo) => {
-            return <Image src={slogo} alt="sociallogo" />;
+          {socialIcons.map((slogo, i) => {
+            return <Image key={i} src={slogo} alt="sociallogo" />;
           })}
         </div>
         <div className="flex items-center justify-center">

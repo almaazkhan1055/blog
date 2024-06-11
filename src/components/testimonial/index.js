@@ -10,12 +10,12 @@ function Testimonial() {
     <>
       <ContentWrapper>
         <Menu />
-        {[...corporateData].slice(0, 3).map((data) => (
-          <Cards cardData={data} />
+        {[...corporateData].slice(0, 3).map((data, i) => (
+          <Cards key={i} cardData={data} />
         ))}
         <Carousel />
-        {[...corporateData].slice(3).map((data) => (
-          <Cards cardData={data} />
+        {[...corporateData].slice(3).map((data, i) => (
+          <Cards key={i} cardData={data} />
         ))}
       </ContentWrapper>
     </>

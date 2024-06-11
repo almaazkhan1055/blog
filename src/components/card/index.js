@@ -28,9 +28,9 @@ const Card = ({ cardData }) => {
         }}
       >
         <div>
-          {cardData.para.map((item) => {
+          {cardData.para.map((item, i) => {
             return (
-              <>
+              <React.Fragment key={i}>
                 <p className="mb-3 sm:mb-7 font-normal text-[17px] leading-[32px] tracking-[0.75px] text-[#4E4B66]">
                   {item}
                   {!!cardData.spanText && (
@@ -39,7 +39,7 @@ const Card = ({ cardData }) => {
                     </span>
                   )}
                 </p>
-              </>
+              </React.Fragment>
             );
           })}
 

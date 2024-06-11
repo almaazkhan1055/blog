@@ -23,9 +23,9 @@ function Contact() {
               <Button bgcolor={"#610BEF"} text={"Subscribe to RSS"} />
             </div>
             {contactData.length > 0 &&
-              contactData.map((item) => {
+              contactData.map((item, i) => {
                 return (
-                  <div>
+                  <div key={i}>
                     {item.image && <Image src={item.image} />}
 
                     <h2 className="font-bold text-4xl leading-12 tracking-widest mt-10">
