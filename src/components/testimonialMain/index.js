@@ -1,7 +1,7 @@
 import React from "react";
-import Testimonial1 from "../testi1/Testimonial1";
-import Testimonial2 from "../testi2/Testimonial2";
-import Carousel from "../carousel/carousel";
+import Testimonial1 from "../testimonial-1";
+import Testimonial2 from "../testimonial-2";
+import Carousel from "../carousel";
 
 const Testimonial = () => {
   return (

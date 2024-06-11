@@ -1,9 +1,9 @@
 import { corporateData } from "@/app/Data";
 import React from "react";
-import Menu from "../menu/Menu";
-import Cards from "../cards/Cards";
-import ContentWrapper from "../wrapper/ContentWrapper";
-import Button from "../button/Button";
+import Menu from "../tabs";
+import Cards from "../cards";
+import ContentWrapper from "../wrapper";
+import Button from "../button";
 
 function Testimonial1() {
   return (

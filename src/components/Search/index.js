@@ -24,16 +24,16 @@ const Search = () => {
             <path
               d="M35 42C39.9706 42 44 37.9706 44 33C44 28.0294 39.9706 24 35 24C30.0294 24 26 28.0294 26 33C26 37.9706 30.0294 42 35 42Z"
               stroke="#6E7191"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M46 44L42 40"
               stroke="#6E7191"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
 

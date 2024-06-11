@@ -1,6 +1,6 @@
 import React from "react";
-import ContentWrapper from "../wrapper/ContentWrapper";
-import Button from "../button/Button";
+import ContentWrapper from "../wrapper";
+import Button from "../button";
 
 function Contact() {
   let headings = [

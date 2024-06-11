@@ -1,8 +1,8 @@
 import React from "react";
-import ReadMore from "./readMore/ReadMore";
+import ReadMore from "../readMorebtn";
 import Image from "next/image";
-import Img from "../../public/CardImages/customer1.jpg";
-import GradientDiv from "./gradientDiv/GradientDiv";
+import Img from "../../../public/CardImages/customer1.jpg";
+import GradientDiv from "../gradient";
 
 function Corporate() {
   return (
@@ -33,7 +33,7 @@ function Corporate() {
           </div>
         </div>
         <p className="sm:font-normal sm:text-[20px] sm:leading-[38px] my-4 text-[#4E4B66] text-base">
-          We've kicked off our virtual conference,
+          We&apos;ve kicked off our virtual conference,
           <span className="text-[#610BEF]"> Stripe Sessions</span>, for payments
           leaders, developers, and founders. Read more about the new products
           and features we highlighted in our keynote and product talks.

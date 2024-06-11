@@ -1,8 +1,8 @@
 import React from "react";
-import Contact from "@/components/contact/Contact";
-import Hero from "@/components/hero/Hero";
-import Testimonial from "@/components/testimonial/Testimonial";
-import Footer from "@/components/footer/Footer";
+import Contact from "@/components/contact";
+import Hero from "../components/hero/index";
+import Testimonial from "../components/testimonialMain/index";
+import Footer from "@/components/footer";
 
 const page = () => {
   return (

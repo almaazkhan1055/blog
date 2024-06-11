@@ -1,9 +1,8 @@
 import React from "react";
-import ContentWrapper from "../wrapper/ContentWrapper";
-import CustomerDetails from "../customerDetails/CustomerDetails";
+import CustomerDetails from "../customerDetails";
 import Image from "next/image";
-import ReadMore from "../readMore/ReadMore";
-import GradientDiv from "../gradientDiv/GradientDiv";
+import ReadMore from "../readMorebtn";
+import GradientDiv from "../gradient";
 
 const Cards = ({ corporateData }) => {
   return (

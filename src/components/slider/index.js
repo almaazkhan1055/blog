@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import ReadMore from "../readMore/ReadMore";
+import ReadMore from "../readMorebtn";
 
 import "swiper/css";
 

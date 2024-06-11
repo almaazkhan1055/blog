@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
-import Corporate from "../Corporate";
-import Search from "../Search/Search";
-import ContentWrapper from "../wrapper/ContentWrapper";
+import Navbar from "../navbar";
+import Corporate from "../heroCard";
+import Search from "../Search";
+import ContentWrapper from "../wrapper";
 const Hero = () => {
   return (
     <>
