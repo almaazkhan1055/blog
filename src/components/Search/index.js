@@ -14,7 +14,7 @@ const Search = () => {
             className="border-2 bg-gray-100 p-2 pl-[40px] rounded-2xl sm:w-[696px] w-[198px] h-[56px] gap-0 rounded-tl-[16px] text-3xl relative"
           />
           <svg
-            className="absolute w-20 h-20 sm:left-[85px] left-[36px] text-gray-400 pointer-events-none"
+            className="absolute w-20 h-20 sm:left-[100px] left-[36px] text-gray-400 pointer-events-none"
             width="72"
             height="68"
             viewBox="0 0 72 68"
