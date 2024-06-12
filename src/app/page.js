@@ -10,7 +10,7 @@ import Card from "@/components/card";
 import Carousel from "@/components/carousel";
 import React, { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [currentSelected, setcurrentSelected] = useState(0);
 
   const handleClick = (index) => {
@@ -46,16 +46,9 @@ const page = () => {
               ) : null
             )
           : null}
-
-        {/* {[...corporateData].slice(0, 3).map((data, i) => (
-          <Card key={i} cardData={data} />
-        ))} */}
       </ContentWrapper>
       <Carousel />
       <ContentWrapper>
-        {/* {[...corporateData].slice(3).map((data, i) => (
-          <Card key={i} cardData={data} />
-        ))} */}
         <Button text="View All Posts" bgcolor="#610BEF" />
       </ContentWrapper>
       <Contact />
@@ -64,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
