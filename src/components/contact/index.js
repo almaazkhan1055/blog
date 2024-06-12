@@ -26,7 +26,7 @@ function Contact() {
               contactData.map((item, i) => {
                 return (
                   <div key={i}>
-                    {item.image && <Image src={item.image} />}
+                    {item.image && <Image src={item.image} alt="itemimage" />}
 
                     <h2 className="font-bold text-4xl leading-12 tracking-widest mt-10">
                       {item.heading}

@@ -1,25 +1,47 @@
-import { corporateData } from "@/app/Data";
-import React from "react";
-import Menu from "../tabs";
-import Cards from "../card";
+"use client";
+import React, { useState } from "react";
 import ContentWrapper from "../wrapper";
-import Carousel from "../carousel";
+import Menu from "../tabs";
+import { corporateData } from "@/app/Data";
+import Card from "../card";
 
-function Testimonial() {
+const Testimonial = () => {
+  const [currentSelected, setcurrentSelected] = useState(0);
+
+  const handleClick = (index) => {
+    setcurrentSelected(index);
+  };
   return (
     <>
       <ContentWrapper>
-        <Menu />
-        {[...corporateData].slice(0, 3).map((data, i) => (
-          <Cards key={i} cardData={data} />
-        ))}
-        <Carousel />
-        {[...corporateData].slice(3).map((data, i) => (
-          <Cards key={i} cardData={data} />
-        ))}
+        <Menu currentSelected={currentSelected} handleClick={handleClick} />
+
+        {currentSelected === 0
+          ? corporateData.map((item, index) => (
+              <Card key={index} cardData={item} />
+            ))
+          : currentSelected === 1
+          ? corporateData.map((item, index) =>
+              item.head === "Corporate" ? (
+                <Card key={index} cardData={item} />
+              ) : null
+            )
+          : currentSelected === 2
+          ? corporateData.map((item, index) =>
+              item.head === "Engineering" ? (
+                <Card key={index} cardData={item} />
+              ) : null
+            )
+          : currentSelected === 3
+          ? corporateData.map((item, index) =>
+              item.head === "Product" ? (
+                <Card key={index} cardData={item} />
+              ) : null
+            )
+          : null}
       </ContentWrapper>
     </>
   );
-}
+};
 
 export default Testimonial;
